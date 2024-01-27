@@ -14,9 +14,7 @@
     --medium-l:500;
     --medium-xl:700;
 }
-header, footer {
-    display: none;
-}
+
 
 body{
     background-color: var(--white);
@@ -26,11 +24,6 @@ body{
     overflow: hidden;
     font-style: normal;
 }
-
-/*
-font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif;
-*/
 
 .contenedorPadre{
     display: flex;
@@ -55,8 +48,13 @@ font-family: 'Roboto', sans-serif;
     transition: transform 0.15s;
 }
 
+.imgreceptor{
+    width: 60px;
+    height: 60px;
+}
+
 .imgreceptor:hover{
-    transform: scale(1.5);
+    transform: scale(1.3);
 }
 
 .botonesChat{
@@ -102,17 +100,25 @@ font-family: 'Roboto', sans-serif;
     padding: 0px 10px;
 }
 
-.textEstado p{
+.textEstado h2, .definicion h2{
+    margin: 0;
+}
+
+.definicion p{
     font-size: 10px;
     color: var(--colorLineasSeparacion);
     margin: 0;
 }
 
+.textEstado h2 {
+    font-size: 14px;
+    font-weight: var(--medium-l);
+}
 
-
-
-
-
+.definicion h2{
+    font-size: 14px;
+    font-weight: var(--medium-l);
+}
 
 .chatMesage{
     display: flex;
@@ -143,3 +149,39 @@ font-family: 'Roboto', sans-serif;
     font-weight: var(--medium-m);
 }
 
+.receptor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid var(--colorLineasSeparacion);
+}
+
+.receptor i{
+    color: var(--fondoChat);
+}
+
+.receptor:hover{
+    background-color: var(--fondoChat);
+}
+
+.chates{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid var(--colorLineasSeparacion);
+}
+
+.chates i{
+    color: var(--fondoChat);
+}
+
+.chates:hover{
+    background-color: var(--fondoChat);
+}
+
+.chates{
+    width: 60px;
+    height: 60px;
+}
