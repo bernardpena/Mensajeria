@@ -1,0 +1,68 @@
+/* Globales*/
+:root {
+    --white: #fff;
+    --gris: #ffffff;
+    --fondoChat: #e8ebe4;
+    --buttonChat: #b0a0d8;
+    --location-color:#707070;
+    --medium-s:300;
+    --medium-m:400;
+    --medium-l:500;
+}
+
+body, menu{
+    margin: 0;
+}
+
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+menu{
+    background-color: var(--white);
+    
+}
+
+menu ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+menu li{
+    padding: 1em;
+    list-style: none;
+    
+}
+
+menu a{
+    text-decoration: none;
+    color: var(--white);
+    color: rgba(255, 255, 255, 0.6);
+    
+
+}
+
+menu a:hover{
+    color: var(--white);
+}
+
+.fotoemisor{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    transition: transform 0.1s;
+}
+
+.contendorcuerpo {
+    display: flex;
+    flex-direction: column;
+
+}
+.padre{
+    display: flex;
+}
