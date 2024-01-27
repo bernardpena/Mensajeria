@@ -4,6 +4,7 @@
     --colorChatNormal: #ffffff;
     --colorLineasSeparacion: #bec1bb;
     --fondoChat: #e8ebe4;
+    --fondoChatHover:#cdc3e6;
     --buttonChatFondo:#bec1bb;
     --buttonChat: #b0a0d8;
     --location-color:#707070;
@@ -36,7 +37,7 @@ body{
     color: var(--colorLetraFondoChat);
     flex: 20%;
     flex-direction: column;
-    height: 100%;
+    height: 100vh;
     overflow-y: auto;
 }
 
@@ -45,12 +46,12 @@ body{
     height: 40px;
     width:  40px;
     object-fit: cover;
-    transition: transform 0.15s;
+    transition: transform 0.13s;
 }
 
 .imgreceptor{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
 }
 
 .imgreceptor:hover{
@@ -61,6 +62,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     flex: 1;
+    align-items: end;
     align-self: center;
 }
 
@@ -84,15 +86,23 @@ body{
 }
 
 .chatNuevo:hover{
-    background-color: var(--buttonChat);
+    background-color: var(--fondoChatHover);
 }
 
 .chatNuevo:focus{
-    background-color: var(--buttonChatFondo);
+    background-color: var(--fondoChatHover);
     color: var(--white);
 }
 
-.textEstado .definicion {
+.textEstado{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    justify-content: center;
+    padding: 0px 10px;
+}
+
+.definicion{
     display: flex;
     flex-direction: column;
     flex: 2;
@@ -143,9 +153,9 @@ body{
 .chatMesage p{
     margin: 10px;
     text-align: center;
-    width: 460px;
-    height: 40;
-    font-size: 40px;
+    width: 450px;
+    height: 50;
+    font-size: 15px;
     font-weight: var(--medium-m);
 }
 
@@ -158,7 +168,7 @@ body{
 }
 
 .receptor i{
-    color: var(--fondoChat);
+    color: var(--colorLineasSeparacion);
 }
 
 .receptor:hover{
@@ -171,6 +181,15 @@ body{
     justify-content: space-between;
     padding: 10px;
     border: 1px solid var(--colorLineasSeparacion);
+    /* width: 100%; */
+    height: 60px;
+}
+
+.chates p{
+    margin: 0;
+    font-size: 10px;
+    font-weight: var(--medium-m);
+    color: var(--colorLetraFondoChat);
 }
 
 .chates i{
@@ -179,9 +198,4 @@ body{
 
 .chates:hover{
     background-color: var(--fondoChat);
-}
-
-.chates{
-    width: 60px;
-    height: 60px;
 }
