@@ -4,6 +4,7 @@
     --colorChatNormal: #ffffff;
     --colorLineasSeparacion: #bec1bb;
     --fondoChat: #e8ebe4;
+    --buttonChatFondo:#bec1bb;
     --buttonChat: #b0a0d8;
     --location-color:#707070;
     --colorLetra: #1b1f3b;
@@ -67,5 +68,24 @@ font-family: 'Roboto', sans-serif;
     align-items: center;
     padding: 40px;
     border: 1px solid var(--colorLineasSeparacion);
+}
 
+.chatNuevo{
+    background-color: var(--buttonChat);
+    color: var(--white);
+    padding: 20px 80px;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.4s ease-in;
+    font-size: 16px;
+}
+
+.chatNuevo:hover{
+    background-color: var(--buttonChat);
+}
+
+.chatNuevo:focus{
+    background-color: var(--buttonChatFondo);
+    color: var(--white);
 }
